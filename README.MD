@@ -9,6 +9,6 @@ Contact me: thang.nguyen.240184@student.fulbright.edu.vn
 * The working space is in [notebook](notebook)
 * The data is in [data](data) 
 * The figures are in [figs](figs)
-* The files created by Dr. Xavier is in [xavier_gibberish](xavier_gibberish)
+* The files created by Dr. Xavier are in [xavier_gibberish](xavier_gibberish)
 
 Later development of built-in LaTeX documentation will be included.
