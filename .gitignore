@@ -6,5 +6,19 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-/data/psid/J366092.txt
-/data/psid/J366094.txt
+# macOS
+.DS_Store
+
+# Data (too large for GitHub; keep local)
+/data/
+xavier_gibberish/**/*.csv
+xavier_gibberish/**/*.xls
+xavier_gibberish/**/*.xlsx
+
+# Problem set packages (local only)
+/projects/problemset1_khoa/
+/projects/problemset1_package/
+*.zip
+
+# Separate repo
+/mystmd-quickstart/
