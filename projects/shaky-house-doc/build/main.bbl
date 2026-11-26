@@ -1,0 +1,117 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Berger%
+, Guerrieri%
+, Lorenzoni%
+\BCBL {}\ \BBA {} Vavra%
+}{%
+Berger%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+berger2018house}
+\APACinsertmetastar {%
+berger2018house}%
+\begin{APACrefauthors}%
+Berger, D.%
+, Guerrieri, V.%
+, Lorenzoni, G.%
+\BCBL {}\ \BBA {} Vavra, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {House Prices and Consumer Spending} {House prices and
+  consumer spending}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Review of Economic Studies}{85}{3}{1502--1542}.
+\newblock
+\begin{APACrefDOI} \doi{10.1093/restud/rdx060} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Campbell%
+\ \BBA {} Cocco%
+}{%
+Campbell%
+\ \BBA {} Cocco%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+campbell2015model}
+\APACinsertmetastar {%
+campbell2015model}%
+\begin{APACrefauthors}%
+Campbell, J\BPBI Y.%
+\BCBT {}\ \BBA {} Cocco, J\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Model of Mortgage Default} {A model of mortgage
+  default}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Finance}{70}{4}{1495--1554}.
+\newblock
+\begin{APACrefDOI} \doi{10.1111/jofi.12252} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D{\'\i}az%
+\ \BBA {} Luengo-Prado%
+}{%
+D{\'\i}az%
+\ \BBA {} Luengo-Prado%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+diaz2008user}
+\APACinsertmetastar {%
+diaz2008user}%
+\begin{APACrefauthors}%
+D{\'\i}az, A.%
+\BCBT {}\ \BBA {} Luengo-Prado, M\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the user cost and homeownership} {On the user cost
+  and homeownership}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Review of Economic Dynamics}{11}{3}{584--613}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kaplan%
+, Mitman%
+\BCBL {}\ \BBA {} Violante%
+}{%
+Kaplan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+kaplan2020housing}
+\APACinsertmetastar {%
+kaplan2020housing}%
+\begin{APACrefauthors}%
+Kaplan, G.%
+, Mitman, K.%
+\BCBL {}\ \BBA {} Violante, G\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Housing Boom and Bust: Model Meets Evidence} {The
+  housing boom and bust: Model meets evidence}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Political Economy}{128}{9}{3285--3345}.
+\newblock
+\begin{APACrefDOI} \doi{10.1086/708816} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
