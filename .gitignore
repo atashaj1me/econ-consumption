@@ -2,23 +2,32 @@
 __pycache__/
 *.py[cod]
 .venv/
-
-# Jupyter
 .ipynb_checkpoints/
 
 # macOS
 .DS_Store
 
-# Data (too large for GitHub; keep local)
+# Data: too large for GitHub, kept locally (see README)
 /data/
-xavier_gibberish/**/*.csv
-xavier_gibberish/**/*.xls
-xavier_gibberish/**/*.xlsx
+course-materials/**/*.csv
+course-materials/**/*.xls
+course-materials/**/*.xlsx
 
-# Problem set packages (local only)
-/projects/problemset1_khoa/
-/projects/problemset1_package/
+# Local-only archives (old submission packages, zips)
+**/archive/
 *.zip
 
-# Separate repo
-/mystmd-quickstart/
+# LaTeX build output (latexmk writes to build/)
+build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+*.nav
+*.snm
+*.toc

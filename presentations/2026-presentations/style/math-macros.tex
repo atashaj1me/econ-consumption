@@ -1,0 +1,129 @@
+% =====================================================================
+%  MATH MACROS  —  project-agnostic utility command set
+%  File: <project>/style/math-macros.tex
+% ---------------------------------------------------------------------
+%  Usage in a paper's main.tex (after \documentclass and before
+%  \begin{document}):
+%
+%      \input{style/math-macros}
+%
+%  Contains only domain-neutral commands that any econ/finance paper
+%  in this vault could use. Project-specific symbol vocabulary
+%  (\FTPL, \SDF, \HHwealth, ...) lives in notation-canon.tex.
+%
+%  Self-contained: assumes only what workingpaper.cls already loads
+%  (amsmath, amsthm, bm, newtxmath). No new \usepackage calls.
+% =====================================================================
+
+
+% ---------------------------------------------------------------------
+%  Probability and expectation operators
+%
+%  Convention: blackboard-bold E and P for measure-theoretic objects;
+%  upright Var/Cov for moment statistics.
+% ---------------------------------------------------------------------
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Corr}{\mathrm{Corr}}
+
+% Conditional shortcuts: \Et[X], \Vart[X], \Covt[X,Y].
+% (Subscript-as-token, so \Et^{\F_s} also works.)
+\newcommand{\Et}{\E_{t}}
+\newcommand{\Vart}{\Var_{t}}
+\newcommand{\Covt}{\Cov_{t}}
+
+
+% ---------------------------------------------------------------------
+%  Number sets
+% ---------------------------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Cset}{\mathbb{C}}        % \C is taken by some packages; alias
+\newcommand{\Rplus}{\R_{+}}
+\newcommand{\Rpp}{\R_{++}}            % strictly positive reals
+
+
+% ---------------------------------------------------------------------
+%  Distributions and convergence
+% ---------------------------------------------------------------------
+\newcommand{\Normal}{\mathcal{N}}                     % Gaussian
+\newcommand{\Unif}{\mathcal{U}}                       % uniform
+\newcommand{\iidsim}{\overset{\text{i.i.d.}}{\sim}}   % X_i \iidsim \Normal(0,1)
+\newcommand{\todist}{\overset{d}{\longrightarrow}}    % convergence in distribution
+\newcommand{\toprob}{\overset{p}{\longrightarrow}}    % convergence in probability
+\newcommand{\toas}{\overset{a.s.}{\longrightarrow}}   % almost-sure convergence
+
+
+% ---------------------------------------------------------------------
+%  Differential calculus
+%
+%  \dd produces an upright "d" with thin-space spacing for integrals:
+%      \int_0^1 f(x) \dd x
+%
+%  \pd / \pdtwo wrap the partial-derivative fraction:
+%      \pd{f}{x}        ->  df/dx (partial)
+%      \pdtwo{f}{x}     ->  d^2 f / dx^2  (partial)
+%      \pdmix{f}{x}{y}  ->  d^2 f / dx dy  (mixed partial)
+% ---------------------------------------------------------------------
+\newcommand{\dd}{\mathop{}\!\mathrm{d}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdtwo}[2]{\frac{\partial^{2} #1}{\partial #2^{2}}}
+\newcommand{\pdmix}[3]{\frac{\partial^{2} #1}{\partial #2 \, \partial #3}}
+
+
+% ---------------------------------------------------------------------
+%  Delimiters
+%
+%  Plain (non-auto-sized) versions. For auto-sizing in display math,
+%  use \left\lvert ... \right\rvert directly, or load mathtools in
+%  the paper's preamble and switch to \DeclarePairedDelimiter.
+% ---------------------------------------------------------------------
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\inner}[2]{\langle #1, #2 \rangle}
+\newcommand{\set}[1]{\{ #1 \}}                        % set-builder shorthand
+\newcommand{\given}{\;\middle|\;}                     % conditional bar in P(A \given B)
+
+
+% ---------------------------------------------------------------------
+%  Indicator function and common matrix ops
+%
+%  \argmax, \argmin, \plim are already declared in workingpaper.cls;
+%  do not duplicate them here.
+% ---------------------------------------------------------------------
+\newcommand{\indic}{\mathbf{1}}                       % \indic\{X > 0\}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\rk}{rank}
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\Span}{span}                     % alias
+\DeclareMathOperator{\proj}{proj}
+
+
+% ---------------------------------------------------------------------
+%  Vector and matrix typography (uses bm, loaded by workingpaper.cls)
+%
+%  Convention: \vect for column vectors, \mat for matrices. Both apply
+%  bold-italic via \bm so that letters retain math-italic shape.
+%  For upright bold (e.g. canonical R^n basis vectors), use \mathbf.
+% ---------------------------------------------------------------------
+\newcommand{\vect}[1]{\bm{#1}}
+\newcommand{\mat}[1]{\bm{#1}}
+\newcommand{\transpose}{^{\top}}                      % X\transpose -> X^T
+\newcommand{\inv}{^{-1}}                              % X\inv      -> X^{-1}
+
+
+% ---------------------------------------------------------------------
+%  Spacing helpers
+% ---------------------------------------------------------------------
+\newcommand{\eqsep}{\;}                               % medium space inside equations
+\newcommand{\where}{\quad\text{where }}               % "where" with spacing
+\newcommand{\suchthat}{\;:\;}                         % shortcut for set-builder colon
+
+
+\endinput

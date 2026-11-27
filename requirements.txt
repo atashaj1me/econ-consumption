@@ -1,0 +1,10 @@
+numpy>=2.5
+pandas>=3.0
+scipy>=1.18
+statsmodels>=0.15
+linearmodels>=7.0
+matplotlib>=3.11
+seaborn>=0.13
+openpyxl>=3.1
+xlrd>=2.0
+ipykernel

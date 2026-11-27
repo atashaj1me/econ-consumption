@@ -1,0 +1,122 @@
+\documentclass{style/fulbright-slides}
+% Options: [nodividers] drops section divider slides; [handout] collapses
+% overlays; [aspectratio=43] for 4:3 projectors.
+\input{style/math-macros}
+
+% Deck-local package additions (uncomment as needed).
+% \usepackage{multirow}
+% \usepackage{tikz}
+
+% Title-page overrides (brand defaults live in the class).
+\classification{Economics of Consumption}
+
+\title[My Talk]{My Talk}
+% \subtitle{...}
+\author[Nguyen Chi Thang]{Nguyen Chi Thang}
+\institute{Fulbright University Vietnam, Ho Chi Minh City, Vietnam \\ \textit{thang.nguyen.240184@student.fulbright.edu.vn}}
+\date{\today}
+
+
+\begin{document}
+
+\begin{frame}[plain, noframenumbering]
+  \titlepage
+\end{frame}
+
+% ---------------------------------------------------------------------
+%  Writing frames: the title is the takeaway, a full sentence (two lines
+%  at most). \framesubtitle{...} adds a small grey kicker above it; the
+%  section name already shows top-right, so use the kicker for the
+%  slide's role (Setup, Main result, Robustness, ...).
+% ---------------------------------------------------------------------
+
+\section{Motivation}
+
+\begin{frame}{State the question as the answer you will defend}
+  \framesubtitle{Why this matters}
+  \begin{itemize}
+    \item Why the question matters, in one line
+    \item What we know already (\textbackslash cite\{...\}) -- and the gap
+    \item What this talk adds
+  \end{itemize}
+\end{frame}
+
+
+\section{Model}
+
+\begin{frame}{The environment fits on one slide}
+  \framesubtitle{Setup}
+  \begin{definition}[Equilibrium]
+    TODO: definition.
+  \end{definition}
+  \[
+    V(k) = \max_{c} \; u(c) + \beta \E\left[ V(k') \right]
+  \]
+\end{frame}
+
+\begin{frame}{The headline result, stated as a claim}
+  \framesubtitle{Main result}
+  \begin{proposition}
+    TODO: statement.
+  \end{proposition}
+  \begin{proof}
+    Sketch, or point to the backup slide.
+  \end{proof}
+\end{frame}
+
+
+\section{Results}
+
+\begin{frame}{What the evidence shows, in one sentence}
+  \framesubtitle{Calibration \textperiodcentered{} Fit}
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      % \includegraphics[width=\linewidth]{graphs/fig1.pdf}
+      \centering\small
+      \begin{tabular}{lcc}
+        \toprule
+                & Model & Data \\
+        \midrule
+        Moment 1 & 0.00  & 0.00 \\
+        Moment 2 & 0.00  & 0.00 \\
+        \bottomrule
+      \end{tabular}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{itemize}
+        \item Read the figure for the audience
+        \item \alert{One number to remember}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\section{Conclusion}
+
+\begin{frame}{Three things to take away}
+  \framesubtitle{Summary}
+  \begin{enumerate}
+    \item Finding
+    \item Mechanism
+    \item Next step
+  \end{enumerate}
+\end{frame}
+
+
+% ---------------------------------------------------------------------
+%  Backup: numbered, but not counted in the n / N total
+% ---------------------------------------------------------------------
+\backupslides
+
+\begin{frame}{Proof details for the main result}
+  \framesubtitle{Main result}
+  TODO.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+  \footnotesize
+  \bibliography{references}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,18 @@
+# Python environment for every project in this workspace.
+#   conda env create -f environment.yml && conda activate econ-consumption
+# or, with the existing venv:  pip install -r requirements.txt
+name: econ-consumption
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - linearmodels
+  - matplotlib
+  - seaborn
+  - openpyxl
+  - xlrd
+  - ipykernel
